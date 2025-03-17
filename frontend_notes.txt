@@ -1,0 +1,77 @@
+Bootstrap,js and react notes
+17/3/2025
+
+STEPS TO CREATE NEW GIT REPO
+
+1:login to github
+2:click on + symbol top rigth and select a new REPOSITORY
+3:Enter the new repo name
+4:give description
+5:make repo public(default)
+6:Select add readme file checkbox
+7:click on create repository button
+
+COMMAND TO DOWNLOAD ANY PUBLIC REPO
+
+Git clone https://github.com/MohammadSadiqmaniyar/pfile_fe_mar25
+
+Repo commands copies(clones) from the server(cloud) to the local machine
+
+Thus, we get a folder of the repo.
+
+$ git status
+the above command is used to check remote repo with respect to local repo
+
+$ git pull origin <branch_name>
+this command download code from remote repo to local repo 
+
+$ git pull origin main
+the above command pulls(downloads) the files from the server to the local repo.only the files which are not updated are pull
+
+STEPS TO CREATE PERSONAL ACCESS TOKEN(PAT)
+
+1:On the top right most corner click on profile icon
+2:In the options click on setting
+3:In the new window scroll down a bit and click on developer settings
+4:On the left top corner click on personal access token and select tokens classic
+5:In the new window click the button generate token and generate token classic.
+6:In the window Add the relevant note// was created during mca
+7:click expiry and select no expiry.
+8:select the checkbox repo
+9:select fully and click on generate token
+10:copy the token mail it to your self
+11:do not save the PAT any where.
+
+NOTE:To do thne operation on your repo from a specific computer the git should recognize the git account on the system.
+
+
+To achive this we have to run the following two commands.
+
+$ git config --global user.name "MohammadSadiqmaniyar"
+$ git config --global user.email "mohammadsadiqmaniyar786@gmail.com"
+
+COMMAND TO SYNC LOCAL REPO WITH REMOTE REEPO
+
+$ git clone https://PAT@github.com/MohammadSadiqmaniyar/pfile_fe_mar25
+
+COMMAND TO UPDATE THE REMOTE REPO WITH RESPECT TO LOCAL REPO
+
+$ git add .
+in the above command the git will mark(stage) all the file which is need to be updated in the remote repo w.r.t local repo.
+
+$ git commit -m"relevant message"
+in above command the git creates secured object consisting of all the stages files and necssary information
+
+$ git push origin main
+
+
+
+Bootstrap Notes
+
+Different ways to enable bootstrap to our webpage
+
+1:Download bootstrap source code and use locally
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
